@@ -29,7 +29,7 @@ const User = () => {
 
   React.useEffect(getUser, []);
 
-  const { name, quote, position, image } = user;
+  const { name, quote, position, img } = user;
   return (
     <div className="d-flex">
       {loading ? (
@@ -46,7 +46,7 @@ const User = () => {
         <>
           <div className="user-card">
             <div className="top">
-              <img src={image} alt="user_image" />
+              <img src={img} alt="user_image" />
             </div>
             <div className="bottom">
               <div className="wrapper">
