@@ -46,7 +46,7 @@ const User = () => {
         <>
           <div className="user-card">
             <div className="top">
-              <img src={image || logo} alt="user_image" />
+              <img src={image} alt="user_image" />
             </div>
             <div className="bottom">
               <div className="wrapper">
