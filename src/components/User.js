@@ -46,7 +46,10 @@ const User = () => {
         <>
           <div className="user-card">
             <div className="top">
-              <img src={img} alt="user_image" />
+              <img
+                src="https://source.unsplash.com/user/c_v_r"
+                alt="user_image"
+              />
             </div>
             <div className="bottom">
               <div className="wrapper">
