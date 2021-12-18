@@ -1,0 +1,152 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "raleway";
+  src: url(./fonts/Raleway-VariableFont_wght.ttf);
+}
+
+body {
+  background: rgb(245, 245, 245);
+  font-family: raleway;
+}
+
+body.dark {
+  background: rgb(43, 43, 43);
+  color: white;
+}
+
+body.dark .toggle button {
+  color: rgb(241, 214, 58);
+}
+
+body.dark .user-card {
+  background: rgb(68, 68, 68);
+  color: black;
+}
+
+body.dark .user-card .bottom {
+  background: rgb(12, 17, 29);
+  color: white;
+}
+
+body.dark .user-card .name {
+  color: rgb(221, 67, 67);
+}
+body.dark .user-card small {
+  color: #ccc;
+}
+
+.container {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.d-flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.heading {
+  margin-bottom: 1rem;
+}
+
+.user-card {
+  border: 1px solid grey;
+  margin: 1rem 0;
+  width: 100%;
+  max-width: 350px;
+  border-radius: 10px;
+  transition: all 0.2s ease-in-out;
+  overflow: hidden;
+  background: white;
+}
+
+.user-card:hover {
+  box-shadow: 7px 7px 20px rgba(0, 0, 0, 0.2);
+}
+
+.user-card .top {
+  height: 150px;
+}
+
+.user-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.user-card .wrapper {
+  padding: 5px 15px;
+}
+
+.user-card .bottom {
+  padding: 1rem 0;
+  background: #ccc;
+}
+
+.user-card .name {
+  color: rgb(3, 127, 165);
+}
+
+.user-card small {
+  color: rgb(97, 97, 97);
+  font-size: 0.8rem;
+}
+
+.user-card .quote {
+  margin-top: 0.7rem;
+  font-style: italic;
+}
+
+.loading-img {
+  margin: 3rem 0 2rem 0;
+}
+
+button {
+  width: 200px;
+  height: 50px;
+  background: rgb(63, 163, 202);
+  color: white;
+  border: none;
+  border-radius: 3px;
+  font-weight: bold;
+  text-transform: uppercase;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+}
+
+button:hover {
+  background: rgb(90, 187, 226);
+}
+
+.info-text {
+  max-width: 500px;
+  width: 100%;
+  margin: 10px 0 2rem 0;
+}
+.info-text p {
+  margin: 1rem 0;
+  text-align: center;
+}
+
+.toggle {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+}
+
+.toggle button {
+  background: none;
+  color: initial;
+  font-size: 1.5rem;
+  border: 1px solid grey;
+  width: 50px;
+  height: 50px;
+}
